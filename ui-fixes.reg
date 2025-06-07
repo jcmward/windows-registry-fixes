@@ -1,0 +1,34 @@
+﻿Windows Registry Editor Version 5.00
+
+; ------------------------------------------------------------------------------
+; UI fixes
+; ------------------------------------------------------------------------------
+
+; Never hide scrollbar
+[HKEY_CURRENT_USER\Control Panel\Accessibility]
+"DynamicScrollbars"=dword:00000000
+
+; Reduce context menu delay
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MenuShowDelay"="20"
+
+; Prevent alt-shift from changing keyboard input language
+[HKEY_CURRENT_USER\Keyboard Layout\Toggle]
+"Language Hotkey"="3"
+"Hotkey"="3"
+"Layout Hotkey"="3"
+
+; Remove OneDrive from "Quick Access"
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+; Restore old, usable context menu
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InProcServer32]
+@=""
+
+; Show hidden files/folders; show file extensions; align taskbar left
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000001
+"HideFileExt"=dword:00000000
+"TaskbarAl"=dword:00000000
+
