@@ -1,0 +1,16 @@
+﻿Windows Registry Editor Version 5.00
+
+; Enable setting lock screen wallpaper (in case Windows Settings claims "Some
+; of these settings are managed by your organization.")
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\DeviceLock\EnforceLockScreenAndLogonImage]
+"policytype"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\DeviceLock\EnforceLockScreenProvider]
+"policytype"=dword:00000000
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+
+; Disable empty lock screen: instead jump straight to password entry
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreen"=dword:00000001
+
