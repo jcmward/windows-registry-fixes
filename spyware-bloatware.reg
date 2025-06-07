@@ -1,0 +1,51 @@
+﻿Windows Registry Editor Version 5.00
+
+; ------------------------------------------------------------------------------
+; Disable spyware and bloatware
+; ------------------------------------------------------------------------------
+
+; Disable Copilot
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+; Disable Cortana
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+
+; Disable Edge starting automatically and running in background
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"BackgroundModeEnabled"=dword:00000000
+"DefaultBrowserSettingEnabled"=dword:00000000
+"HubsSidebarEnabled"=dword:00000000
+"StandaloneHubsSidebarEnabled"=dword:00000000
+"StartupBoostEnabled"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
+"AllowPrelaunch"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\TabPreloader]
+"AllowTabPreloading"=dword:00000000
+
+; Disable telemetry
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+; Disable telemetry in Microsoft Office
+[HKEY_CURRENT_USER\Software\Microsoft\Office\Common\ClientTelemetry]
+"DisableTelemetry"=dword:00000001
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
+"Enablelogging"=dword:00000000
+"EnableUpload"=dword:00000000
+
+; Disable Bing integration with search
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"AllowSearchToUseLocation"=dword:00000000
+"BingSearchEnabled"=dword:00000000
+"CortanaConsent"=dword:00000000
+"SearchboxTaskbarMode"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+; Disable widgets
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Dsh]
+"AllowNewsAndInterests"=dword:00000000
+
