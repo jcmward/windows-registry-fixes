@@ -1,0 +1,26 @@
+﻿Windows Registry Editor Version 5.00
+
+; Remove all trace of Adobe Creative Cloud from the file explorer
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{0E270DAA-1BE6-48F2-AC49-516FBC6179EE}]
+@="Creative Cloud Files"
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+"SortOrderIndex"=dword:00000042
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{0E270DAA-1BE6-48F2-AC49-516FBC6179EE}\DefaultIcon]
+@="C:\\Program Files (x86)\\Adobe\\Adobe Sync\\CoreSync\\customhook\\..\\sibres\\CloudSync\\cloud_fld_w10.ico"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{0E270DAA-1BE6-48F2-AC49-516FBC6179EE}\InProcServer32]
+@="%%systemroot%%\\system32\\shell32.dll"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{0E270DAA-1BE6-48F2-AC49-516FBC6179EE}\Instance]
+"CLSID"="{0E5AAE11-A475-4c5b-AB00-C66DE400274E}"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{0E270DAA-1BE6-48F2-AC49-516FBC6179EE}\Instance\InitPropertyBag]
+"Attributes"=dword:00000011
+"TargetFolderPath"="C:\\Users\\Jon\\Creative Cloud Files"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{0E270DAA-1BE6-48F2-AC49-516FBC6179EE}\ShellFolder]
+"Attributes"=dword:f080004d
+"FolderValueFlags"=dword:00000028
+
