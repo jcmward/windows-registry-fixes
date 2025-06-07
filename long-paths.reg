@@ -1,0 +1,5 @@
+﻿Windows Registry Editor Version 5.00
+
+; Enable long file paths (longer than the default 260 characters)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"LongPathsEnabled"=dword:00000001

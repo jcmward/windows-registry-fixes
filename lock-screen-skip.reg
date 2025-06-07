@@ -1,0 +1,9 @@
+﻿Windows Registry Editor Version 5.00
+
+; Skip empty lock screen; instead go straight to password entry.
+;
+; NOTE: this may cause Windows to block the user from changing their lock
+; screen background in the settings menu.  If so, this can be undone with the
+; lock-screen-enable.reg file.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreen"=dword:00000001

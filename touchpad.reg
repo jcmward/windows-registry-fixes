@@ -1,0 +1,14 @@
+﻿Windows Registry Editor Version 5.00
+
+; Only use 3/4-finger tap as middle mouse
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"ThreeFingerSlideEnabled"=dword:00000000
+"FourFingerSlideEnabled"=dword:00000000
+"ThreeFingerTapEnabled"=dword:00000004
+"FourFingerTapEnabled"=dword:00000004
+; ThreeFingerTapEnabled / FourFingerTapEnabled values:
+; 0 = Nothing / Disabled
+; 1 = Open Search
+; 2 = Notification Center
+; 3 = Play/Pause media
+; 4 = Middle mouse button

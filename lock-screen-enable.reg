@@ -1,0 +1,6 @@
+﻿Windows Registry Editor Version 5.00
+
+; Re-enable lock screen (e.g. to restore ability to set lock screen wallpaper
+; if Settings claims "Some of these settings are managed by your organization."
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreen"=dword:00000000
